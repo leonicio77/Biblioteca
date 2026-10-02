@@ -5,8 +5,8 @@ from django.db import models
 
 class Cidade(models.Model):
     nome = models.CharField(
-        max_length=100,
-        verbose_name="Nome da cidade"
+         max_length=100,
+         verbose_name="Nome da cidade"
     )
     uf = models.CharField(
         max_length=2,
@@ -93,7 +93,7 @@ class Genero(models.Model):
     )
 
     def __str__(self):
-        return self.nomegf
+        return self.nome
 
     class Meta:
         verbose_name = "Gênero"
