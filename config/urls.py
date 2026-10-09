@@ -16,4 +16,5 @@ urlpatterns = [
     path('genero/', GenerosView.as_view(), name='genero'),
 
     path('delete/<int:id>/', DeleteLivroView.as_view(), name='delete'),
+    path('editar/<int:id>/', EditarLivroView.as_view(), name='editar'),
 ]
